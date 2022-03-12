@@ -1,0 +1,562 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Cinzel';
+ 
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  font-size: 2.5rem;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.container {
+  max-width: 1600px;
+  padding: 0 50px;
+  margin: 0 auto;
+  /* overflow: hidden */
+}
+.button {
+  padding: 2rem 3rem;
+  border-radius: 5px;
+}
+.dark {
+  background: #000;
+  color: #fff;
+}
+.light {
+  background: #fff;
+  color: #000;
+}
+
+/******************************************
+/* NAVIGATION
+/*******************************************/
+.headerNav {
+  font-size: 1.6em;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 15%;
+  padding: 1em 0;
+}
+
+.navUl {
+  justify-content: space-evenly;
+  list-style: none;
+  display: flex;
+  flex-basis: 70%;
+}
+
+.navAnch {
+  flex-basis: 15%;
+  text-align: center;
+}
+
+.headerSpan {
+  font-family: 'Dancing Script';
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+.main {
+  background-image: url('../images/main-pic.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  display: flex; 
+  align-items: center;
+  
+}
+.mainContainer {
+  /* margin: 0; */
+  width: 1500px;
+  /* padding-left: 10%; */
+}
+.mainText {
+  overflow: hidden;
+  /* padding-left: 10rem; */
+  padding: 10rem 0;
+  text-align: center;
+}
+.mainText h1 {
+  font-size: 10rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+.mainText h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 10rem;
+}
+
+.mainText .bookOnlineContainer {
+  overflow: hidden;
+  padding: 8rem 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  width: 500px;
+  margin: 10rem auto;
+}
+
+.bookOnlineContainer .bookOnlineh2 {
+  border-left: 5px solid #fff;
+  padding: 2rem 0;
+  margin-bottom: 4rem;
+}
+.discount {
+  padding: 0 1rem;
+}
+.bookOnlineContainer .bookOnlineSpan {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+
+/******************************************
+/* SECTION ONE
+/*******************************************/
+
+.sectOneContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15rem 0;
+}
+
+.sectOneContainer img {
+  width: 100px;
+}
+.sectOneContainer h2 {
+  margin: 2rem 0;
+}
+.serviceOne, .serviceTwo, .serviceThree {
+  text-align: center;
+  flex-basis: 25%;
+}
+
+
+/******************************************
+/* SECTION TWO
+/*******************************************/
+
+.sectTwo {
+  background: rgb(243,244,246);
+  padding: 15rem 0;
+}
+
+.sectTwoContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sectTwoText {
+  flex-basis: 30%;
+}
+.sectTwoImg {
+  flex-basis: 40%;
+}
+.sectTwoImg img {
+  width: 600px;
+  border-radius: 5px;
+  /* width: 485px; */
+}
+.sectTwoText h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.sectTwoText p {
+  text-align: left;
+}
+
+
+
+/******************************************
+/* SECTION THREE
+/*******************************************/
+
+.sectThree {
+  display: flex;
+  justify-content: space-between;
+  padding: 15rem 50px;
+}
+.person {
+  flex-basis: 20%;
+  text-align: center;
+  position: relative;
+  
+}
+.sectThree img {
+  width: 350px;
+  border-radius: 5px;
+  /* height: 300px; */
+}
+
+.spanContainer {
+  position: absolute;
+  bottom: -4%;
+  left: 15%;
+  right: 15%;
+  background: #000;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 12px 1px  rgba(0, 0, 0, 0.4);
+}
+
+.sectThree span {
+  display: block;
+  color:#fff;
+  font-size: 1.6rem;
+}
+
+span.name {
+  font-size: 2.2rem;
+}
+
+
+
+/******************************************
+/* SECTION FOUR
+/*******************************************/
+
+.sectFour {
+  height: 1000px;
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-image: url('../images/offer-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60%;
+  /* display: flex;
+  justify-content: center; */
+  width: 100%;
+  /* border: 1px solid black; */
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+
+.sectFourText {
+  width: 50%;
+  padding-right: 4%;
+}
+.sectFourText h3{
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.sectFourText h2 {
+  font-size: 4em;
+  font-weight: 500;
+  margin: 4rem 0;
+  margin-bottom: 7rem;
+}
+
+.sectFourText span {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+
+
+/******************************************
+/* SECTION FIVE
+/*******************************************/
+
+.sectFive {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 15rem;
+}
+.sectFive h2{
+  flex-basis: 100%;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.sectFive span{
+  flex-basis: 100%;
+  font-size: 10rem;
+}
+.grid {
+  display: grid;
+  flex-basis: 90%;
+  height: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.imageBox {
+  width: 100%;
+}
+.box2 {
+  /* width: 80%; */
+  /* height: 300px; */
+  grid-row-start: 1;
+  grid-row-end: 3;
+  
+  grid-column: 2/3;
+ 
+}
+.box4 {
+  grid-row: 2/4;
+}
+.box5 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.box6 {
+  grid-row: 2/4;
+}
+
+.imageBox img {
+  height: 100%;
+  /* width: 100%; */
+}
+
+.grid img {
+  width: 100%;
+  
+} 
+
+
+
+
+/******************************************
+/* MEDIA QUERIES  
+/*******************************************/
+
+@media all and (max-width: 1300px) {
+  .sectThree {
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
+  .person {
+    display: inline-block;
+    width: 375px;
+    height: 562px;
+  }
+
+}
+
+@media all and (max-width: 1225px) {
+  .sectTwoContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
+  .sectTwoText {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .burger {
+    /* float: left; */
+    /* padding: 25px; */
+    display: inline-block;
+  }
+  .headerSpan {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .headerNav {
+    display: block;
+    position: relative;
+  }
+  .burger:hover {
+    cursor: pointer;
+  }
+  .burger div {
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    background-color: #304659;
+  }
+  .navUl, .navAnch {
+    display: none;
+  }
+
+  .mainText {
+    padding: 6rem 0;
+  }
+  .mainText h1 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+  }
+  .mainText h2 {
+    margin-bottom: 6rem;
+  }
+  .mainText .bookOnlineContainer {
+    margin: 6rem auto;
+    width: 350px;
+  }
+  .bookOnlineContainer .bookOnlineh2 {
+    font-size: 2rem;
+  }
+  .bookOnlineContainer .bookOnlineSpan {
+    font-size: 3rem;
+  }
+  .bookOnlineContainer .discount {
+    font-size: 2rem;
+  }
+  .box {
+    background-position: right;
+    justify-content: center;
+  }
+  .sectFourText {
+    text-align: center;
+    padding-right: 0;
+    width: 350px;
+    background-color: rgba(214, 215, 215, 0.75);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  .sectFourText h3 {
+    font-size: 2rem;
+  }
+  .sectFourText h2 {
+    font-size: 3rem;
+  }
+  .sectFourText span {
+    font-size: 3rem;
+  }
+  .sectFourText a {
+    font-size: 1.2rem;
+
+  }
+ 
+  .sectOneContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
+  .serviceOne, .serviceTwo, .serviceThree {
+     width: 90%;
+  }
+}
+
+
+@media all and (max-width: 850px) {
+  p {
+    font-size: 1.8rem;
+  }
+  .sectThree {
+    padding-bottom: 5rem;
+  }
+  .sectThree img {
+    width: 275px;
+  }
+  .person {
+    width: 275px;
+  }
+  span.name {
+    font-size: 1.6rem;
+  }
+  .sectThree span {
+    font-size: 1.2rem;
+  }
+  .spanContainer {
+    padding: 1rem 0;
+  }
+  .sectTwo {
+    padding: 10rem 0;
+  }
+  .sectTwoText h2 {
+    font-size: 4rem;
+  }
+  .sectFour {
+    height: 800px;
+  }
+
+
+
+} 
+
+@media all and (max-width: 660px) {
+  .container {
+    padding: 0 10px;
+  }
+  .mainContainer {
+    background-color: rgba(230, 230, 230, 0.6);
+    
+  }
+  .sectThree.container {
+    padding-top: 15rem;
+  }
+  .sectTwoImg img {
+    width: 100%;
+  }
+  .mainText .bookOnlineContainer {
+    width: 250px;
+  }
+  .sectFour {
+    height: 675px;
+  }
+  .sectFive {
+    padding-bottom: 10rem;
+  }
+}
