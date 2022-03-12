@@ -109,7 +109,7 @@ p {
 
 .main {
   background-image: url('../images/main-pic.png');
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
@@ -280,7 +280,7 @@ span.name {
   background-image: url('../images/offer-img.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height: 60%;
   /* display: flex;
   justify-content: center; */
@@ -336,7 +336,7 @@ span.name {
 }
 .grid {
   display: grid;
-  flex-basis: 90%;
+  flex-basis: 75%;
   height: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -371,6 +371,7 @@ span.name {
 .imageBox img {
   height: 100%;
   /* width: 100%; */
+  object-fit: cover;
 }
 
 .grid img {
@@ -378,7 +379,112 @@ span.name {
   
 } 
 
+/******************************************
+/* CAROUSEL 
+/*******************************************/
 
+.carousel {
+  position: relative;
+  height: 500px;
+  /* width: 65%; */
+  width: 400px;
+  margin: 0 auto;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carouselTrackContainer {
+  /* background-color: lightgreen; */
+  /* padding: 10px; */
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carouselTrack {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 400ms ease-in;
+}
+
+.carouselSlide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0; 
+  cursor: pointer;
+  /* font-size: 2rem; */
+}
+
+.carouselButtonLeft {
+  left: -40px;
+}
+
+#leftArr {
+  font-size: 5rem;
+}
+#rightArr {
+  font-size: 5rem;
+}
+
+.carouselButtonRight {
+  right: -40px;
+
+}
+
+.carouselButton img {
+  width: 12px;
+}
+
+.carouselNav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carouselIndicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+}
+
+.carouselIndicator.currentSlide {
+  background: rgba(0,0,0, 0.75);
+
+}
+li.currentSlide {
+  display: inline-block;
+}
+
+
+
+
+
+/******************************************
+/* SECTION ADDITIONAL
+/*******************************************/
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
 
 
 /******************************************
@@ -409,6 +515,7 @@ span.name {
     text-align: center;
     width: 80%;
   }
+ 
 }
 
 @media all and (max-width: 1050px) {
@@ -532,9 +639,40 @@ span.name {
     height: 800px;
   }
 
-
-
 } 
+
+@media all and (max-width: 700px) {
+  
+ /* .box1 {
+    display: inline-block;
+  } */
+  .box1, .box2, .box3, .box4, .box5, .box6 {
+    display: none;
+  }
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+  }
+  .grid .imageBox {
+    flex-basis: 50%;
+  }
+  .grid span {
+    font-size: 6rem;
+  }
+  
+  .carouselTrackContainer{
+    background-color: rgba(200, 200, 200, 0.3);
+    border-radius: 20px;
+  }
+  .carousel {
+    display: block;
+    padding-bottom: 10rem;
+  }
+  
+
+}
 
 @media all and (max-width: 660px) {
   .container {
@@ -558,5 +696,12 @@ span.name {
   }
   .sectFive {
     padding-bottom: 10rem;
+    padding: 0 50px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .carousel {
+    width: 100%;
   }
 }
