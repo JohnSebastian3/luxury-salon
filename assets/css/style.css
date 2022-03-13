@@ -25,6 +25,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -60,6 +61,12 @@ p {
   padding: 2rem 3rem;
   border-radius: 5px;
 }
+.button.dark:hover {
+  background-color:#404447;
+}
+.button.light:hover {
+  background-color: #dadfe4;
+}
 .dark {
   background: #000;
   color: #fff;
@@ -92,6 +99,10 @@ p {
 .navAnch {
   flex-basis: 15%;
   text-align: center;
+}
+
+.navUl a:hover, .navAnch:hover {
+  color:rgb(212, 212, 212);
 }
 
 .headerSpan {
@@ -336,7 +347,7 @@ span.name {
 }
 .grid {
   display: grid;
-  flex-basis: 75%;
+  /* flex-basis: 75%; */
   height: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
