@@ -3,7 +3,7 @@ A responsive, accessible landing page for a Salon business. Built with Grid and 
 
 **Link to project:** https://jgsalon.netlify.app/
  
-![alt tag](http://placecorgi.com/1200/650)
+![alt tag](assets/images/salongif.gif)
 
 ## How It's Made:
 
